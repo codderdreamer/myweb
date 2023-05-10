@@ -18,6 +18,7 @@ a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
+    transition: color 0.2s ease-out;
 }
 
 a:hover {
@@ -71,7 +72,6 @@ header {
     display: none;
 }
 
-/* DROPDOWN MENU */
 .dropdown_menu{
     display: none;
     position: absolute;
@@ -101,7 +101,7 @@ header {
     width: 0;
     height: 2px;
     background-color: orange;
-    transition: width 0.25 ease-out;
+    transition: width 0.25s ease-out;
 }
 
 .dropdown_menu a:hover::before,
@@ -119,6 +119,64 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+section#welcome{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#welcome h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#welcome p{
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.companies {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 5rem;
+}
+
+.secition_companies{
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.companies_img{
+    width: 200px;
+    height: auto;
+}
+
+.companies .header{
+    color: rgba(255, 166, 0, 0.61);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.companies .subheader{
+    color: #ffffffb3;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* --------------------------------------   RESPONSIVE DESING   ----------------------------- */
 
 /* RESPONSIVE DESING  992px */
 @media (max-width: 992px) {
@@ -144,7 +202,6 @@ header {
     .dropdown_menu{
         display: block;
     }
-    
 }
 
 /* RESPONSIVE DESING 470px */
