@@ -45,9 +45,23 @@ header {
     font-weight: bold;
 }
 
+.navbar .profile_links{
+    display: flex;
+    gap: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#code-img, #dreamer{
+    color: orange;
+}
+
+
 .navbar .links{
     display: flex;
     gap: 2rem;
+    
 }
 
 .navbar .toggle_btn {
