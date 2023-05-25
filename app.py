@@ -12,9 +12,9 @@ class Application():
         self.flask_module = FlaskModule(__name__)
         self.flask_module.run(BootError)
 
-        # Websocketi Başlat
-        self.websocket_module = WebsocketModule(self)
-        self.websocket_module.run()
+        # # Websocketi Başlat
+        # self.websocket_module = WebsocketModule(self)
+        # self.websocket_module.run()
 
 Application()
 while True:
