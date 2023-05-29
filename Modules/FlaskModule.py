@@ -30,7 +30,7 @@ class FlaskModule():
         else:
             self.add_error_endpoint()
             
-        self.flask_thread = threading.Thread(target=self.flaskapp.run,kwargs={"host":"0.0.0.0","port":5000})
+        self.flask_thread = threading.Thread(target=self.flaskapp.run,kwargs={"host":"0.0.0.0","port":8000})
         self.flask_thread.daemon = True
         self.flask_thread.start()
 
