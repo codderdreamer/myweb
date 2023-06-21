@@ -92,6 +92,11 @@ header {
     position: relative;
 }
 
+.active{
+    color: orange;
+}
+
+
 .dropdown_menu a::before,
 .links a::before{
     content: "";
@@ -163,7 +168,7 @@ section#welcome{
 }
 
 .companies .header{
-    color: rgba(255, 166, 0, 0.61);
+    color: rgba(255, 169, 10, 0.747);
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }

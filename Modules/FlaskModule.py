@@ -41,6 +41,12 @@ class FlaskModule():
     def add_all_endpoints(self):
         # Add root endpoint
         self.add_endpoint(endpoint="/", endpoint_name="/", handler=self.InitFlask)
+        self.add_endpoint(endpoint="/about", endpoint_name="/about", handler=self.About)
+        self.add_endpoint(endpoint="/projects", endpoint_name="/projects", handler=self.Projects)
+        self.add_endpoint(endpoint="/articles", endpoint_name="/articles", handler=self.Articles)
+        
+        
+        
         self.add_endpoint(endpoint="/test", endpoint_name="/test", handler=self.Test)
 
         # Add action endpoints
@@ -57,6 +63,15 @@ class FlaskModule():
         # Dummy action
         return render_template('home.html')
         # Test it with curl 127.0.0.1:5000
+
+    def About(self):
+        return render_template('about.html')
+    
+    def Projects(self):
+        return render_template('projects.html')
+    
+    def Articles(self):
+        return render_template('articles.html')
 
     def Test(self):
         return render_template('test.html')
