@@ -44,10 +44,12 @@ class FlaskModule():
         self.add_endpoint(endpoint="/about", endpoint_name="/about", handler=self.About)
         self.add_endpoint(endpoint="/projects", endpoint_name="/projects", handler=self.Projects)
         self.add_endpoint(endpoint="/articles", endpoint_name="/articles", handler=self.Articles)
+        self.add_endpoint(endpoint="/projects/parkule", endpoint_name="/projects/parkule", handler=self.Projects_Otomatik_Katli_Otopark_Parkule)
+        self.add_endpoint(endpoint="/projects/parkonfor", endpoint_name="/projects/parkonfor", handler=self.Projects_Otomatik_Katli_Otopark_Parkonfor)
+
+
+        self.add_endpoint(endpoint="/admin", endpoint_name="/admin", handler=self.Admin)
         
-        
-        
-        self.add_endpoint(endpoint="/test", endpoint_name="/test", handler=self.Test)
 
         # Add action endpoints
         #self.add_endpoint(endpoint="/add_X", endpoint_name="/add_X", handler=self.add_X)
@@ -62,7 +64,6 @@ class FlaskModule():
     def InitFlask(self):
         # Dummy action
         return render_template('home.html')
-        # Test it with curl 127.0.0.1:5000
 
     def About(self):
         return render_template('about.html')
@@ -72,9 +73,20 @@ class FlaskModule():
     
     def Articles(self):
         return render_template('articles.html')
+    
+    def Projects_Otomatik_Katli_Otopark_Parkule(self):
+        return render_template('parkule.html')
+    
+    def Projects_Otomatik_Katli_Otopark_Parkonfor(self):
+        return render_template('parkonfor.html')
+    
+    def Admin(self):
+        return render_template('admin.html')
+    
 
-    def Test(self):
-        return render_template('test.html')
+
+
+
 
     def page_not_found(self,Error):
         # Dummy action

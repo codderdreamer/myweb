@@ -1,12 +1,119 @@
 main{
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-.project1{
+.project{
     width: 300px;
-    height: 300px;
-    background-color: blanchedalmond;
-
+    height: 430px;
+    background-color: rgba(56, 56, 56, 0.596);
+    border-radius: 20px;
+    box-shadow: 7px 7px 30px rgba(121, 121, 121, 0.699);
+    transition: box-shadow 0.5s;
+    transition: border 0.5s;
+    margin-left: 90px;
+    margin-bottom: 90px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    border-left: 2px solid rgba(56, 56, 56, 0.596);
+    border-top: 2px solid rgba(56, 56, 56, 0.596);
 }
+
+.project:hover{
+    box-shadow: 7px 7px 30px rgba(189, 168, 138, 0.699);
+    border-left: 2px solid rgba(189, 168, 138, 0.699);
+    border-top: 2px solid rgba(189, 168, 138, 0.699);
+    cursor: pointer;
+}
+
+
+
+.projectImage{
+    position: absolute;
+    top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 260px;
+    height: auto;
+    border-radius: 5%;
+    opacity: 0.7;
+}
+
+.date{
+    position: absolute;
+    width: 300px;
+    color: rgb(177, 177, 177);
+    font-size: 12px;
+    padding-right: 20px;
+    text-align:right;
+    letter-spacing: 1px; 
+    top: 20px;
+    height: 15px;
+}
+
+.header{
+    position: absolute;
+    color: rgb(206, 187, 134);
+    font-size: 15px;
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    top: 50px;
+    font-weight: bold;
+}
+
+.company{
+    position: absolute;
+    color: rgb(219, 219, 219);
+    top: 320px;
+    width: 300px;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.companyHeader{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(206, 187, 134);
+    width: 80px;
+    float: left;
+}
+
+.companyContent{
+    width: 180px;
+    height: 45px;
+    float: left;
+}
+
+.keywords{
+    position: absolute;
+    color: rgb(219, 219, 219);
+    width: 300px;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 370px;
+}
+
+.keywordsHeader{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(206, 187, 134);
+    width: 80px;
+    float: left;
+}
+
+.keywordsContent{
+    width: 180px;
+    height: 45px;
+    float: left;
+}
+
+
+
+
+
