@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Admin</title>
+    <style>
+        .input{
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    Admin
+
+    <div class="projectHeader">Proje Ekle</div>
+    <input id="order" type="text" placeholder="Sıra" class="input">
+    <input id="date" type="text" placeholder="Tarih" class="input">
+    <input id="projectName" type="text" placeholder="Proje Adını giriniz." class="input">
+    <input id="companyName" type="text" placeholder="Şirket Adı" class="input">
+    <input id="keywords" type="text" placeholder="Keywords" class="input">
+    <button id="saveButton" onclick="save()">Save</button>
+
+
+    <script>
+        function save(){
+            let post = JSON.stringify(
+                {
+                    order: document.getElementById("order").value ,
+                    date:  document.getElementById("date").value ,
+                    projectName: document.getElementById("projectName").value ,
+                    companyName: document.getElementById("companyName").value ,
+                    keywords: document.getElementById("keywords").value 
+                }
+            )
+
+            fetch("/admin", {
+                method: 'post',
+                body: post,
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            }).then((response) => {
+                return response.json()
+            }).then((res) => {
+                if (res.status === 201) {
+                    console.log("Post successfully created!")
+                }
+            }).catch((error) => {
+                console.log(error)
+            })
+        }
+        
+    </script>
 </body>
 </html>

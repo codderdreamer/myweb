@@ -9,8 +9,6 @@ class WebsocketModule():
         self.application = application
         self.websocket = websocket_server.WebsocketServer('0.0.0.0', 9000 )
 
-
-
     def run(self):
         self.websocket.set_fn_new_client(self.NewClientws)
         self.websocket.set_fn_client_left(self.ClientLeftws)
@@ -25,15 +23,17 @@ class WebsocketModule():
         DataToSend = {"Command": command, "Data": data}
         self.websocket.send_message_to_all(json.dumps(DataToSend))
 
+    def send_message(self,client,command = None, data = None):
+        DataToSend = {"Command": command, "Data": data}
+        message = json.dumps(DataToSend)
+        self.websocket.send_message(client=client,msg=message)
+
     def ClientLeftws(self,client, server):
         print("Client(%d) disconnected" % client['id'])
 
     def MessageReceivedws(self, client, server, message):
         IncomingData = json.loads(message)
         print(IncomingData)
-
-        if IncomingData['Command'] == 'Start':
-            self.send_projects(IncomingData['Data']["pageName"])
 
 
     def send_projects(self,pageName):

@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../static/navbar.css">
     <link rel="stylesheet" href="../static/projects.css">
     <title>Projects</title>
 </head>
+
 <body>
+    <template id="projectTemplate">
+        <div class="project">
+            <div id="date" class="date">20/01/2022</div>
+            <div id="projectName" class="header">Elektrikli Araç Şarj İstasyonu</div>
+
+            <img src="/static/assets/charger.png" alt="" class="projectImage" style="padding-top: 30px;">
+
+            <div class="company">
+                <div class="companyHeader">Şirket Adı</div>
+                <div id="companyName" class="companyContent">Lorem ipsum dolor sit.</div>
+            </div>
+
+            <div class="keywords">
+                <div class="keywordsHeader">Keywords</div>
+                <div id="keywords" class="keywordsContent">Python, TCP/IP, Ethernet, Modbus, Mqtt, SQLite, Linux, yocto
+                </div>
+            </div>
+        </div>
+    </template>
+
     <header>
         <!-- Navbar -->
         <div class="navbar">
-            <div class="logo"><a href="#"><i id="code-img" class="fa-solid fa-code"></i>  Coder<span id="dreamer">Dreamer</span></a></div>
+            <div class="logo"><a href="#"><i id="code-img" class="fa-solid fa-code"></i> Coder<span
+                        id="dreamer">Dreamer</span></a></div>
             <div class="profile_links">
                 <a href="">
                     <i class="fa-brands fa-github"></i>
@@ -26,10 +51,10 @@
                 <a href="">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                
+
             </div>
             <ul class="links">
-                <li><a href="/" >Ana Sayfa</a></li>
+                <li><a href="/">Ana Sayfa</a></li>
                 <li><a href="about">Hakkında</a></li>
                 <li><a href="projects" class="active">Projeler</a></li>
                 <li><a href="articles">Makaleler</a></li>
@@ -49,54 +74,15 @@
 
     <main>
 
-        <!-- Elektrikli Araç Şarj İstasyonu -->
-        <div class="project">
-            <div class="date">20/01/2022</div>
-            <div class="header">Elektrikli Araç Şarj İstasyonu</div>
-            
-            <img src="/static/assets/charger.png" alt="" class="projectImage" style="padding-top: 30px;">
-            
-            <div class="company">
-                <div class="companyHeader">Şirket Adı</div>
-                <div class="companyContent">Lorem ipsum dolor sit.</div>
-            </div>
 
-            <div class="keywords">
-                <div class="keywordsHeader">Keywords</div>
-                <div class="keywordsContent">Python, TCP/IP, Ethernet, Modbus, Mqtt, SQLite, Linux, yocto</div>
-            </div>
-        </div> 
+        <div id="projectContent">
 
-        
-        <!-- Otomatik Katlı Otopark Sistemi Yönetimi Parkule -->
-        <div class="project">
-            <a href="/projects/parkule">
-                <div class="date">18/03/2021</div>
-                <div class="header">Otomatik Katlı Otopark Sistemi Yönetimi Parkule</div>
-    
-                <img src="/static/assets/parkule.jpg" alt="" class="projectImage">
-    
-                <div class="company">
-                    <div class="companyHeader">Şirket Adı</div>
-                    <div class="companyContent">Lorem ipsum dolor sit.</div>
-                </div>
-    
-                <div class="keywords">
-                    <div class="keywordsHeader">Keywords</div>
-                    <div class="keywordsContent">Python, TCP/IP, OPC UA, Bluetooth, UDP, SQLite, HTML, CSS, Javascript, Rest API, websocket, Docker</div>
-                </div>
-            </a>
-        </div>
+            <!-- Elektrikli Araç Şarj İstasyonu -->
+            <!-- <div class="project">
+                <div class="date">20/01/2022</div>
+                <div class="header">Template</div>
 
-
-        <!-- Otomatik Katlı Otopark Sistemi Yönetimi Parkonfor -->
-
-        <div class="project">
-            <a href="/projects/parkonfor">
-                <div class="date">14/12/2020</div>
-                <div class="header">Otomatik Katlı Otopark Sistemi Yönetimi Parkonfor</div>
-
-                <img src="/static/assets/parkonfor.png" alt="" class="projectImage">
+                <img src="/static/assets/charger.png" alt="" class="projectImage" style="padding-top: 30px;">
 
                 <div class="company">
                     <div class="companyHeader">Şirket Adı</div>
@@ -105,87 +91,120 @@
 
                 <div class="keywords">
                     <div class="keywordsHeader">Keywords</div>
-                    <div class="keywordsContent">Python, TCP/IP, OPC UA, Bluetooth, UDP, SQLite, HTML, CSS, Javascript, Rest API, websocket, Docker</div>
+                    <div class="keywordsContent">Python, TCP/IP, Ethernet, Modbus, Mqtt, SQLite, Linux, yocto</div>
                 </div>
-            </a>
+            </div> -->
+
+
+            <!-- Otomatik Katlı Otopark Sistemi Yönetimi Parkule -->
+            <!-- <div class="project">
+                <a href="/projects/parkule">
+                    <div class="date">18/03/2021</div>
+                    <div class="header">Otomatik Katlı Otopark Sistemi Yönetimi Parkule</div>
+
+                    <img src="/static/assets/parkule.jpg" alt="" class="projectImage">
+
+                    <div class="company">
+                        <div class="companyHeader">Şirket Adı</div>
+                        <div class="companyContent">Lorem ipsum dolor sit.</div>
+                    </div>
+
+                    <div class="keywords">
+                        <div class="keywordsHeader">Keywords</div>
+                        <div class="keywordsContent">Python, TCP/IP, OPC UA, Bluetooth, UDP, SQLite, HTML, CSS,
+                            Javascript, Rest API, websocket, Docker</div>
+                    </div>
+                </a>
+            </div> -->
+
+
+            <!-- Otomatik Katlı Otopark Sistemi Yönetimi Parkonfor -->
+<!-- 
+            <div class="project">
+                <a href="/projects/parkonfor">
+                    <div class="date">14/12/2020</div>
+                    <div class="header">Otomatik Katlı Otopark Sistemi Yönetimi Parkonfor</div>
+
+                    <img src="/static/assets/parkonfor.png" alt="" class="projectImage">
+
+                    <div class="company">
+                        <div class="companyHeader">Şirket Adı</div>
+                        <div class="companyContent">Lorem ipsum dolor sit.</div>
+                    </div>
+
+                    <div class="keywords">
+                        <div class="keywordsHeader">Keywords</div>
+                        <div class="keywordsContent">Python, TCP/IP, OPC UA, Bluetooth, UDP, SQLite, HTML, CSS,
+                            Javascript, Rest API, websocket, Docker</div>
+                    </div>
+                </a>
+
+            </div> -->
+
+
+            <!-- C++ Online Chat Sitesi -->
+
+            <!-- <div class="project">
+                <div class="date">20/03/2020</div>
+                <div class="header">C++ Online Chat Sitesi</div>
+
+                <img src="/static/assets/chat.jpg" alt="" class="projectImage">
+
+                <div class="company">
+                    <div class="companyHeader">Company Name</div>
+                    <div class="companyContent">Piton Arge ve Yazılım Evi</div>
+                </div>
+
+                <div class="keywords">
+                    <div class="keywordsHeader">Keywords</div>
+                    <div class="keywordsContent">C++, TCP/IP, SQLite, HTML, CSS, Javascript, Rest API</div>
+                </div>
+            </div> -->
+
+            <!-- C++ Arşivleme Sistemi -->
+
+            <!-- <div class="project">
+                <div class="date">20/03/2020</div>
+                <div class="header">C++ Arşivleme Sistemi Rest API</div>
+
+                <img src="/static/assets/chat.jpg" alt="" class="projectImage">
+
+                <div class="company">
+                    <div class="companyHeader">Company Name</div>
+                    <div class="companyContent">Piton Arge ve Yazılım Evi</div>
+                </div>
+
+                <div class="keywords">
+                    <div class="keywordsHeader">Keywords</div>
+                    <div class="keywordsContent">C++, TCP/IP, SQLite, HTML, CSS, Javascript, Rest API</div>
+                </div>
+            </div> -->
+
+            <!-- C++ Destop Uygulması TCP/IP -->
+
+            <!-- <div class="project">
+                <div class="date">20/03/2020</div>
+                <div class="header">C++ Destop Uygulması TCP/IP</div>
+
+                <img src="/static/assets/chat.jpg" alt="" class="projectImage">
+
+                <div class="company">
+                    <div class="companyHeader">Company Name</div>
+                    <div class="companyContent">Piton Arge ve Yazılım Evi</div>
+                </div>
+
+                <div class="keywords">
+                    <div class="keywordsHeader">Keywords</div>
+                    <div class="keywordsContent">C++, TCP/IP, SQLite, HTML, CSS, Javascript, Rest API</div>
+                </div>
+            </div> -->
+
+
 
         </div>
 
 
-        <!-- C++ Online Chat Sitesi -->
-        
-        <div class="project">
-            <div class="date">20/03/2020</div>
-            <div class="header">C++ Online Chat Sitesi</div>
 
-            <img src="/static/assets/chat.jpg" alt="" class="projectImage">
-
-            <div class="company">
-                <div class="companyHeader">Company Name</div>
-                <div class="companyContent">Piton Arge ve Yazılım Evi</div>
-            </div>
-
-            <div class="keywords">
-                <div class="keywordsHeader">Keywords</div>
-                <div class="keywordsContent">C++, TCP/IP, SQLite, HTML, CSS, Javascript, Rest API</div>
-            </div>
-        </div>
-
-        <!-- C++ Arşivleme Sistemi -->
-        
-        <div class="project">
-            <div class="date">20/03/2020</div>
-            <div class="header">C++ Arşivleme Sistemi Rest API</div>
-
-            <img src="/static/assets/chat.jpg" alt="" class="projectImage">
-
-            <div class="company">
-                <div class="companyHeader">Company Name</div>
-                <div class="companyContent">Piton Arge ve Yazılım Evi</div>
-            </div>
-
-            <div class="keywords">
-                <div class="keywordsHeader">Keywords</div>
-                <div class="keywordsContent">C++, TCP/IP, SQLite, HTML, CSS, Javascript, Rest API</div>
-            </div>
-        </div>
-
-        <!-- C++ Destop Uygulması TCP/IP -->
-
-        <div class="project">
-            <div class="date">20/03/2020</div>
-            <div class="header">C++ Destop Uygulması TCP/IP</div>
-
-            <img src="/static/assets/chat.jpg" alt="" class="projectImage">
-
-            <div class="company">
-                <div class="companyHeader">Company Name</div>
-                <div class="companyContent">Piton Arge ve Yazılım Evi</div>
-            </div>
-
-            <div class="keywords">
-                <div class="keywordsHeader">Keywords</div>
-                <div class="keywordsContent">C++, TCP/IP, SQLite, HTML, CSS, Javascript, Rest API</div>
-            </div>
-        </div>
-
-
-
-
-
-        
-
-        <div class="project">
-        </div>
-
-        <div class="project">
-        </div>
-
-        <div class="project">
-        </div>
-
-        <div class="project">
-        </div>
 
 
 
@@ -195,6 +214,52 @@
     <script src="../static/websocket.js"></script>
     <script>
         connect("projects")
+
+        async function getProjects() {
+            let response = await fetch('/getProjects')
+            let data = await response.json()
+            return data
+        }
+        getProjects().then(
+            data => 
+            {
+                console.log(data)
+                for (let i = 0; i < data.length; i++) {
+                    let projectContent = document.getElementById('projectContent')
+                    projectContent.appendChild(document.getElementById("projectTemplate").content.cloneNode(true));
+                    companyName = data[i]["company name"]
+                    date = data[i]["date"]
+                    keywords = data[i]["keywords"]
+                    order = data[i]["order"]
+                    projectName = data[i]["project name"]
+
+                    document.getElementById("date").innerHTML = date
+                    document.getElementById("date").id = "date_" + i.toString()
+
+                    document.getElementById("projectName").innerHTML = projectName
+                    document.getElementById("projectName").id = "projectName_" + i.toString()
+
+                    document.getElementById("companyName").innerHTML = companyName
+                    document.getElementById("companyName").id = "companyName_" + i.toString()
+
+                    document.getElementById("keywords").innerHTML = keywords
+                    document.getElementById("keywords").id = "keywords_" + i.toString()
+
+                }
+            }
+        )
+
+
+
+
+
+
+        
+
+
+
+
     </script>
 </body>
+
 </html>

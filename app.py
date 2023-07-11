@@ -7,14 +7,19 @@ BootError=False
 
 class Application():
     def __init__(self):
+        # Mongodb'ye bağlan
+        self.database = DatabaseModule()
+        self.database.connect_db()
 
         # Flaskı Başlat
-        self.flask_module = FlaskModule(__name__)
+        self.flask_module = FlaskModule(__name__,self)
         self.flask_module.run(BootError)
 
         # Websocketi Başlat
         self.websocket_module = WebsocketModule(self)
         self.websocket_module.run()
+
+
 
 Application()
 while True:
