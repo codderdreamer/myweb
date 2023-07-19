@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../static/navbar.css">
+    <link rel="stylesheet" href="../static/home.css">
     <title>My Web Application</title>
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <!-- Navbar -->
         <div class="navbar">
-            <div class="logo"><a href="#"><i id="code-img" class="fa-solid fa-code"></i>  Coder<span id="dreamer">Dreamer</span></a></div>
+
+            <div class="logo"><a href="#"><i id="code-img" class="fa-solid fa-code"></i> Coder<span
+                        id="dreamer">Dreamer</span></a>
+            </div>
+
+
             <div class="profile_links">
                 <a href="">
                     <i class="fa-brands fa-github"></i>
@@ -27,14 +37,18 @@
                 <a href="">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                
+
             </div>
+
+
             <ul class="links">
                 <li><a href="/" class="active">Ana Sayfa</a></li>
                 <li><a href="about">Hakkında</a></li>
                 <li><a href="projects">Projeler</a></li>
                 <li><a href="articles">Makaleler</a></li>
             </ul>
+
+
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -49,49 +63,62 @@
     </header>
     <main>
         <section id="welcome">
-            <h1>Welcome My Blog</h1>
+            <h1 class="welcome">Merhaba, bloğuma hoş geldiniz...</h1>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, 
-                exercitationem impedit? Impedit aperiam odit expedita quia 
-                asperiores itaque dolores, perspiciatis, dolorum neque maxime eius excepturi,
-                officia quod in harum suscipit.
+                Ben Eskişehir Osmangazi Üniversitesi Elektrik Elektronik Mühendisliği mezunuyum. 4 yıldır
+                yazılım mühendisliği alanında çalışmaktayım. Linux üzerinde gömülü sistem uygulamaları geliştiriyorum.
             </p>
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, 
-                eaque. Quam sit, natus architecto itaque quos fugit aspernatur atque libero consequatur 
-                non a adipisci pariatur vero numquam eum! Hic, corporis.
+                Bu web sitesinde bu zamana kadar uğraştığım her şeyi görebilirsiniz. Tüm detaylarına kadar açıklamaya
+                çalıştım.
+                Fakat firmaların gizli kısımlarını ve kodlarını paylaşamayacağım. Kendi yaptığım projeleri ve open
+                source olarak
+                geliştirdiklerimi detaylıca paylaştım.
             </p>
 
             <div class="companies">
-                <div class="secition_companies">
-                    <li class="header">Piton Arge ve Yazılım Evi</li>
-                    <div class="subheader">Akıllı Ulaşım Sistemleri</div>
-                    <img class="companies_img" src="../static/assets/intelligent_transport.png" alt="">
+                <div class="firm">
+                    <div class="secition_companies">
+                        <li class="header">Piton Arge ve Yazılım Evi</li>
+                        <div class="subheader">Akıllı Ulaşım Sistemleri</div>
+                        <img class="companies_img" src="../static/assets/intelligent_transport.png" alt="">
+                    </div>
                 </div>
-                <div class="secition_companies">
-                    <li class="header">Parkolay</li>
-                    <div class="subheader">Otomatik Katlı Otopark Sistemleri</div>
-                    <img class="companies_img" src="../static/assets/otopark.png" alt="">
+
+                <div class="firm">
+                    <div class="secition_companies">
+                        <li class="header">Parkolay</li>
+                        <div class="subheader">Otomatik Katlı Otopark Sistemleri</div>
+                        <img class="companies_img" src="../static/assets/otopark.png" alt="">
+                    </div>
                 </div>
-                <div class="secition_companies">
-                    <li class="header">Aspower</li>
-                    <div class="subheader">Elektrikli Araç Şarj İstasyonu Sistemleri</div>
-                    <img class="companies_img" src="../static/assets/chargingstation.png" alt="">
+
+                <div class="firm">
+                    <div class="secition_companies">
+                        <li class="header">Aspower</li>
+                        <div class="subheader">Elektrikli Araç Şarj İstasyonu Sistemleri</div>
+                        <img class="companies_img aspower-img" src="../static/assets/chargingstation.png" alt="">
+                    </div>
                 </div>
-                <div class="secition_companies">
-                    <li class="header">DNS İnovasyon</li>
-                    <div class="subheader">Depozito Yönetim Sistemi</div>
-                    <img style="width: 100px;" class="companies_img" src="../static/assets/dbys.png" alt="">
+
+
+                <div class="firm">
+                    <div class="secition_companies">
+                        <li class="header">DNS İnovasyon</li>
+                        <div class="subheader">Depozito Yönetim Sistemi</div>
+                        <img style="width: 100px;" class="companies_img" src="../static/assets/dbys.png" alt="">
+                    </div>
                 </div>
-                
+
             </div>
         </section>
     </main>
     <script src="../static/navbar.js"></script>
-    <script src="../static/websocket.js" ></script>
+    <script src="../static/websocket.js"></script>
     <script>
         connect("home")
     </script>
 </body>
+
 </html>

@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-color: #000;
+    background-color: #202020;
 }
 
 li {
@@ -39,6 +39,14 @@ header {
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.logo{
+    width: 350px;
+}
+
+ul{
+    width: 350px;
 }
 
 .navbar .logo a{
@@ -149,23 +157,9 @@ section#welcome{
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
-.secition_companies{
-    display: flex;
-    flex-direction: column;
-    /* gap: 1rem; */
-    width: 200px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.companies_img{
-    width: 200px;
-    height: auto;
-}
 
 .companies .header{
     color: rgba(255, 169, 10, 0.747);

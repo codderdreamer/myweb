@@ -19,6 +19,7 @@
     <input id="projectName" type="text" placeholder="Proje Adını giriniz." class="input">
     <input id="companyName" type="text" placeholder="Şirket Adı" class="input">
     <input id="keywords" type="text" placeholder="Keywords" class="input">
+    <input id="link" type="text" placeholder="Link" class="input">
     <button id="saveButton" onclick="save()">Save</button>
 
 
@@ -30,7 +31,8 @@
                     date:  document.getElementById("date").value ,
                     projectName: document.getElementById("projectName").value ,
                     companyName: document.getElementById("companyName").value ,
-                    keywords: document.getElementById("keywords").value 
+                    keywords: document.getElementById("keywords").value ,
+                    link: document.getElementById("link").value
                 }
             )
 

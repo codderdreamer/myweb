@@ -15,21 +15,23 @@
 <body>
     <template id="projectTemplate">
         <div class="project">
-            <div id="date" class="date">20/01/2022</div>
-            <div id="projectName" class="header">Elektrikli Araç Şarj İstasyonu</div>
+            <a id="link" href="">
+                <div id="date" class="date">20/01/2022</div>
+                <div id="projectName" class="header">Elektrikli Araç Şarj İstasyonu</div>
 
-            <img src="/static/assets/charger.png" alt="" class="projectImage" style="padding-top: 30px;">
+                <img src="/static/assets/charger.png" alt="" class="projectImage" style="padding-top: 30px;">
 
-            <div class="company">
-                <div class="companyHeader">Şirket Adı</div>
-                <div id="companyName" class="companyContent">Lorem ipsum dolor sit.</div>
-            </div>
-
-            <div class="keywords">
-                <div class="keywordsHeader">Keywords</div>
-                <div id="keywords" class="keywordsContent">Python, TCP/IP, Ethernet, Modbus, Mqtt, SQLite, Linux, yocto
+                <div class="company">
+                    <div class="companyHeader">Şirket Adı</div>
+                    <div id="companyName" class="companyContent">Lorem ipsum dolor sit.</div>
                 </div>
-            </div>
+
+                <div class="keywords">
+                    <div class="keywordsHeader">Keywords</div>
+                    <div id="keywords" class="keywordsContent">Python, TCP/IP, Ethernet, Modbus, Mqtt, SQLite, Linux, yocto
+                    </div>
+                </div>
+            </a>
         </div>
     </template>
 
@@ -199,15 +201,7 @@
                 </div>
             </div> -->
 
-
-
         </div>
-
-
-
-
-
-
     </main>
 
     <script src="../static/navbar.js"></script>
@@ -232,6 +226,7 @@
                     keywords = data[i]["keywords"]
                     order = data[i]["order"]
                     projectName = data[i]["project name"]
+                    link = data[i]["link"]
 
                     document.getElementById("date").innerHTML = date
                     document.getElementById("date").id = "date_" + i.toString()
@@ -244,6 +239,8 @@
 
                     document.getElementById("keywords").innerHTML = keywords
                     document.getElementById("keywords").id = "keywords_" + i.toString()
+
+                    document.getElementById("link").href=link; 
 
                 }
             }

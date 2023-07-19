@@ -93,8 +93,9 @@ class FlaskModule():
             projectName = request.json['projectName']
             companyName = request.json['companyName']
             keywords = request.json['keywords']
+            link = request.json['link']
             print(request.json)
-            self.app.database.projects_collection.insert_project(order, projectName, date, companyName, keywords)
+            self.app.database.projects_collection.insert_project(order, projectName, date, companyName, keywords,link)
 
             return json.dumps({})
         else:

@@ -1,0 +1,39 @@
+.firm{
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 230px;
+    height: 230px;
+    background-color: rgba(56, 56, 56, 0.596);
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px rgba(121, 121, 121, 0.699);
+    transition: box-shadow 0.5s;
+    transition: border 0.5s;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    border-left: 2px solid rgba(56, 56, 56, 0.596);
+    border-top: 2px solid rgba(56, 56, 56, 0.596);
+}
+
+.firm:hover{
+    box-shadow: 7px 7px 30px rgba(189, 168, 138, 0.699);
+    border-left: 2px solid rgba(189, 168, 138, 0.699);
+    border-top: 2px solid rgba(189, 168, 138, 0.699);
+    cursor: pointer;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    width: 1300px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    color: aliceblue;
+}
